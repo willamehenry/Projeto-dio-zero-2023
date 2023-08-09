@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    
+    , initial-scale=1.0">
+    <title>Formulario de cadastro</title>
+</head>
+
+<body>
+    <form name="Cadastro" method="get" autocomplete="off" onsubmit="alert('Enviado com sucesso')"
+        action="http://127.0.0.1:5500/index.html">
+        <label>Nome</label> <input type="text" name="Nome" /><br> <br>
+        <label>Idade</label> <input type="number" name="Idade" /> <br> <br>
+        <label>Senha</label> <input type="password" name="Senha" /> <br><br>
+        <input type="file" multiple />
+        <button type="submit" name="envio">Enviar </button>
+
+        <br>
+        <label>Opção</label> <input name="gato" type="checkbox" value="queijo" /> +quejo <br>
+        <label>Opção</label> <input name="gato" type="checkbox" value="queijo" /> +quejo <br>
+        <button type="reset" name="resetar" onclick="alert('enviado com sucesso')">Limpar</button>
+        <br> <br><select name="role">
+            <option value="gerente"> gerente</option>
+            <option value="Aux">Aux</option>
+            <option value="Assistente">Assistente</option>
+            <option value="T.I">T.I</option>
+        </select>
+        <br>
+        teste <input type="radio" name="role" value="teste" /><br>
+        teste <input type="radio" name="role" value="teste" /><br>
+        teste <input type="radio" name="role" value="teste" /><br>
+    </form>
+    <br>
+
+</body>
+
+</html>
