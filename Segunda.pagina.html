@@ -8,13 +8,27 @@
     , initial-scale=1.0">
     <title>Formulario de cadastro</title>
 </head>
+<style>
+fieldset {
 
+background-color: rgb(105, 104, 41);
+border-radius:10px ;
+ font-size: large;
+}
+
+</style>
 <body>
     <form name="Cadastro" method="get" autocomplete="off" onsubmit="alert('Enviado com sucesso')"
         action="http://127.0.0.1:5500/index.html">
-        <label>Nome</label> <input type="text" name="Nome" /><br> <br>
-        <label>Idade</label> <input type="number" name="Idade" /> <br> <br>
-        <label>Senha</label> <input type="password" name="Senha" /> <br><br>
+        <fieldset >
+            <legend> Dados pessoais </legend>
+            <label>Nome</label> <input type="text" name="Nome" /><br> <br>
+            <label>Idade</label> <input type="number" name="Idade" /> <br> <br>
+        </fieldset> <br>
+        <fieldset>
+            <legend>Acesso</legend>
+            <label>Senha</label> <input type="password" name="Senha" /> <br><br>
+        </fieldset> <br>
         <input type="file" multiple />
         <button type="submit" name="envio">Enviar </button>
 
