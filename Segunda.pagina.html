@@ -9,18 +9,21 @@
     <title>Formulario de cadastro</title>
 </head>
 <style>
-fieldset {
+    fieldset {
 
-background-color: rgb(105, 104, 41);
-border-radius:10px ;
- font-size: large;
-}
-
+        background-color: rgb(105, 104, 41);
+        border-radius: 10px;
+        font-size: large;
+    }
 </style>
+
 <body>
+    <br>
+    <a href="index.html">Voltar Pagina princpial</a>
+    <br> <br>
     <form name="Cadastro" method="get" autocomplete="off" onsubmit="alert('Enviado com sucesso')"
         action="http://127.0.0.1:5500/index.html">
-        <fieldset >
+        <fieldset>
             <legend> Dados pessoais </legend>
             <label>Nome</label> <input type="text" name="Nome" /><br> <br>
             <label>Idade</label> <input type="number" name="Idade" /> <br> <br>
@@ -48,6 +51,13 @@ border-radius:10px ;
         teste <input type="radio" name="role" value="teste" /><br>
     </form>
     <br>
+    <hr>
+    <audio controls>
+        <source src="musica1.mp3" />
+        Seu navegador não suporta audio
+
+    </audio>
+    
 
 </body>
 
